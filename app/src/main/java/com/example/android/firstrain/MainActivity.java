@@ -21,7 +21,7 @@ public class AA extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
-        LinearLayout ll = (LinearLayout) findViewById(R.id.bg_gif);
+        LinearLayout ll = (LinearLayout) findViewById(R.id.gifView);
         MyGIFView myGif = new MyGIFView(this);
         ll.addView(myGif);
 
