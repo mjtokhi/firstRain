@@ -2,7 +2,7 @@ package com.example.android.firstrain;
 
 import android.app.Activity;
 import android.os.Bundle;
-import com.example.android.firstrain.MyGIFView;
+import android.widget.LinearLayout;
 
 public class MainActivity extends Activity {
 
@@ -20,7 +20,12 @@ public class AA extends Activity {
 
         super.onCreate(savedInstanceState);
 
-        setContentView(new MyGIFView(this));
+        setContentView(R.layout.activity_main);
+        LinearLayout ll = (LinearLayout) findViewById(R.id.bg_gif);
+        MyGIFView myGif = new MyGIFView(this);
+        ll.addView(myGif);
+
+
     }
 
 }
