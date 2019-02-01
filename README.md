@@ -1,2 +1,9 @@
 # firstRain
-if(firstRain == true){return yes} else {return no}
+if(firstRain == true)
+{
+  return 1;
+} 
+else
+{
+  return 0;
+}
